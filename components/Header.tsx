@@ -9,12 +9,6 @@ import { Session } from "next-auth";
 export default function Header({ session }: { session: Session }) {
   const pathname = usePathname();
 
-  console.log(
-    "initials",
-    getInitials(session?.user?.name || "IN"),
-    session?.user?.name
-  );
-
   return (
     <header className="my-10 flex justify-between gap-5 ">
       <Link href="/">
