@@ -46,12 +46,14 @@ export async function signInWithCredentials(
   params: Pick<AuthCredentials, "email" | "password">
 ) {
   const { email, password } = params;
+
   try {
     const result = await signIn("credentials", {
       email,
       password,
-      redirect: true,
+      redirect: false,
     });
+    console.log("result", result);
     return { success: true };
   } catch (error) {
     console.error("SignIn Error", error);
