@@ -8,6 +8,13 @@
       "when": 1736863717527,
       "tag": "0000_next_rictor",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1737046154290,
+      "tag": "0001_far_ultimates",
+      "breakpoints": true
     }
   ]
 }

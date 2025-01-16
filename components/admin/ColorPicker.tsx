@@ -1,7 +1,7 @@
 import { HexColorInput, HexColorPicker } from "react-colorful";
 
 interface ColorPickerProps {
-  value: string;
+  value?: string;
   onPickerChange: (color: string) => void;
 }
 
