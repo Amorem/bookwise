@@ -11,7 +11,7 @@ export default function Header({ session }: { session: Session }) {
           Monitor all of your users and books here
         </p>
       </div>
-      <p>Search</p>
+      {/* <p>Search</p> */}
     </header>
   );
 }
