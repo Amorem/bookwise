@@ -100,6 +100,7 @@ export default function AuthForm<T extends FieldValues>({
                         placeholder="Upload your ID"
                         folder="ids"
                         variant="dark"
+                        value={field.value}
                       />
                     ) : (
                       <Input
