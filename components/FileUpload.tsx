@@ -3,7 +3,6 @@
 import config from "@/lib/config";
 import { IKImage, IKUpload, IKVideo, ImageKitProvider } from "imagekitio-next";
 import { useRef, useState } from "react";
-import { Button } from "./ui/button";
 import Image from "next/image";
 import { toast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
