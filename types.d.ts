@@ -34,3 +34,21 @@ interface BookParams {
   videoUrl: string;
   summary: string;
 }
+
+interface BorrowBookParams {
+  bookId: string;
+  userId: string;
+}
+
+interface User {
+  id: string;
+  fullName: string;
+  email: string;
+  universityId: string;
+  password: string;
+  universityCard: string;
+  status: string;
+  role: string;
+  lastActivityDate: string;
+  createdAt: string;
+}

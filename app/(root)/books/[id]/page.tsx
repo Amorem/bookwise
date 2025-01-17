@@ -23,11 +23,9 @@ export default async function Bookpage({
 
   if (!bookDetails) redirect("/404");
 
-  console.log("@@DEBUG", bookDetails);
-
   return (
     <>
-      <BookOverview {...bookDetails[0]} userId={session?.user?.id as string} />
+      <BookOverview {...bookDetails[0]} />
       <div className="book-details">
         <div className="flex-[1.5]">
           <section className="flex flex-col gap-7">

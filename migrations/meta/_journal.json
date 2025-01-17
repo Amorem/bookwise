@@ -15,6 +15,13 @@
       "when": 1737046154290,
       "tag": "0001_far_ultimates",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1737114695265,
+      "tag": "0002_slim_venom",
+      "breakpoints": true
     }
   ]
 }
