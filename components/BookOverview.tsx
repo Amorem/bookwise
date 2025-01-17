@@ -7,11 +7,11 @@ export default function BookOverview({
   author,
   genre,
   rating,
-  total_copies,
-  available_copies,
+  totalCopies,
+  availableCopies,
   description,
-  color,
-  cover,
+  coverColor,
+  coverUrl,
 }: Book) {
   return (
     <section className="book-overview">
@@ -32,8 +32,8 @@ export default function BookOverview({
         </div>
 
         <div className="book-copies">
-          <p>Total books: {total_copies} </p>
-          <p>Available books: {available_copies} </p>
+          <p>Total books: {totalCopies} </p>
+          <p>Available books: {availableCopies} </p>
         </div>
 
         <p className="book-description">{description}</p>
@@ -49,12 +49,16 @@ export default function BookOverview({
           <BookCover
             variant="wide"
             className="z-10"
-            coverColor={color}
-            coverImage={cover}
+            coverColor={coverColor}
+            coverImage={coverUrl}
           />
 
           <div className="absolute left-16 top-10 rotate-12 opacity-40 max-sm:hidden">
-            <BookCover variant="wide" coverColor={color} coverImage={cover} />
+            <BookCover
+              variant="wide"
+              coverColor={coverColor}
+              coverImage={coverUrl}
+            />
           </div>
         </div>
       </div>
